@@ -76,11 +76,12 @@ Test Plan Summary
 _________________________________________________________________________________________________________________________________________________
 
 Validation & Verification Metrics  
-Metric	Target Value	Notes  
-Infusion update latency	< 2 seconds	Pump → DB → Dashboard  
-Alarm propagation accuracy	> 99%	Must match pump alarms exactly  
-Data loss rate	< 0.1%	Across all ingestion services  
-Drug library sync success rate	100%	All pumps receive latest library  
-Uptime during soak test	> 99.9%	No service downtime  
+
+Metric	Target Value	Notes:  
+Infusion update latency	< 2 seconds	Pump → DB → Dashboard    
+Alarm propagation accuracy	> 99%	Must match pump alarms exactly    
+Data loss rate	< 0.1%	Across all ingestion services    
+Drug library sync success rate	100%	All pumps receive latest library    
+Uptime during soak test	> 99.9%	No service downtime    
 
 
