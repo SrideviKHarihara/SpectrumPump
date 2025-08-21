@@ -21,22 +21,22 @@ Scope
 Verification Activities:
 
 1.	Requirement Traceability Matrix (RTM): Map each Spectrum requirement → test case → evidence.
-2.	Interface Verification:
-o	Confirm MDAP → DeviceBridge → DB message flow.
-o	Verify communication protocols (TCP/UDP, ports, retry logic).
-3.	Functional Verification:
-o	Pump start, stop, rate change → DB update within 2 sec.
-o	Alarm messages (occlusion, air-in-line, door open, battery low).
-o	Infusion complete/end-of-dose messages.
-4.	Drug Library Sync Verification:
-o	Ensure latest drug library version loads correctly on pumps.
-o	Check DeviceBridge confirms sync status.
-5.	Database Verification:
-o	Validate schema consistency for pump telemetry and alerts.
-o	Confirm no message duplication or loss.
-6.	Test Tools:
-o	Simulated Spectrum pump gateway.
-o	Automated ingestion verification scripts (Python/Splunk queries).
+2.	Interface Verification:  
+o	Confirm MDAP → DeviceBridge → DB message flow.  
+o	Verify communication protocols (TCP/UDP, ports, retry logic).  
+3.	Functional Verification:  
+o	Pump start, stop, rate change → DB update within 2 sec.  
+o	Alarm messages (occlusion, air-in-line, door open, battery low).  
+o	Infusion complete/end-of-dose messages.  
+4.	Drug Library Sync Verification:  
+o	Ensure latest drug library version loads correctly on pumps.  
+o	Check DeviceBridge confirms sync status.  
+5.	Database Verification:  
+o	Validate schema consistency for pump telemetry and alerts.  
+o	Confirm no message duplication or loss.  
+6.	Test Tools:  
+o	Simulated Spectrum pump gateway.  
+o	Automated ingestion verification scripts (Python/Splunk queries).  
 
 Deliverables: Verification Protocols, Test Scripts, Verification Report.
 __________________________________________________________________________________________________________________________________________
@@ -49,21 +49,21 @@ Scope
 
 Validation Activities:
 
-1.	Clinical Workflow Testing:  
-o	Program infusion on Spectrum pump → verify infusion event appears in DeviceBridge and downstream systems.    
-o	Modify infusion rate → confirm update accuracy in <2 sec.    
-2.	Alarm Validation:  
-o	Simulate occlusion, air-in-line, near-end infusion → verify alarm in Vault Mobile/Nurse Call.  
-o	Check alarm text, priority, and timestamp correctness.  
-3.	Drug Library Validation:  
-o	Program infusion with restricted drug → verify pump blocks it per library rules.  
-o	Confirm validation alerts appear in DeviceBridge logs.  
-4.	Load & Soak Validation:  
-o	100+ concurrent Spectrum pumps over 12–24 hrs.  
-o	Validate no message loss, stable performance under load.  
-5.	Human Factors Validation:  
-o	Nurse acknowledgment of alarms via Vault Mobile.  
-o	Check that clinical users can interpret alerts easily.  
+1.	Clinical Workflow Testing:    
+o	Program infusion on Spectrum pump → verify infusion event appears in DeviceBridge and downstream systems.      
+o	Modify infusion rate → confirm update accuracy in <2 sec.      
+2.	Alarm Validation:    
+o	Simulate occlusion, air-in-line, near-end infusion → verify alarm in Vault Mobile/Nurse Call.    
+o	Check alarm text, priority, and timestamp correctness.    
+3.	Drug Library Validation:    
+o	Program infusion with restricted drug → verify pump blocks it per library rules.    
+o	Confirm validation alerts appear in DeviceBridge logs.    
+4.	Load & Soak Validation:    
+o	100+ concurrent Spectrum pumps over 12–24 hrs.    
+o	Validate no message loss, stable performance under load.    
+5.	Human Factors Validation:    
+o	Nurse acknowledgment of alarms via Vault Mobile.    
+o	Check that clinical users can interpret alerts easily.    
 
 Deliverables: Validation Protocols, Clinical Simulation Results, Validation Report.  
 ________________________________________________________________________________________________________________________________________________
