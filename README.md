@@ -10,14 +10,15 @@ The goal is to ensure:
 ______________________________________________________________________________________________________________________________________________________________
 Verification 
 
-Scope
-•	Software ingestion services (K8s pods, YAML configs).
-•	Communication interfaces (MDAP, DeviceBridge APIs).
-•	Drug library synchronization.
-•	Alarm/event propagation.
-•	Data storage in PostgreSQL/MongoDB.
+Scope  
+•	Software ingestion services (K8s pods, YAML configs).  
+•	Communication interfaces (MDAP, DeviceBridge APIs).  
+•	Drug library synchronization.  
+•	Alarm/event propagation.  
+•	Data storage in PostgreSQL/MongoDB.  
 
 Verification Activities:
+
 1.	Requirement Traceability Matrix (RTM): Map each Spectrum requirement → test case → evidence.
 2.	Interface Verification:
 o	Confirm MDAP → DeviceBridge → DB message flow.
