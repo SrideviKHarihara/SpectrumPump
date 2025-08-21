@@ -46,37 +46,38 @@ Scope
 •	Integration with EMR, Vault Mobile, and Nurse Call.
 
 Validation Activities:
-1.	Clinical Workflow Testing:
-o	Program infusion on Spectrum pump → verify infusion event appears in DeviceBridge and downstream systems.
-o	Modify infusion rate → confirm update accuracy in <2 sec.
-2.	Alarm Validation:
-o	Simulate occlusion, air-in-line, near-end infusion → verify alarm in Vault Mobile/Nurse Call.
-o	Check alarm text, priority, and timestamp correctness.
-3.	Drug Library Validation:
-o	Program infusion with restricted drug → verify pump blocks it per library rules.
-o	Confirm validation alerts appear in DeviceBridge logs.
-4.	Load & Soak Validation:
-o	100+ concurrent Spectrum pumps over 12–24 hrs.
-o	Validate no message loss, stable performance under load.
-5.	Human Factors Validation:
-o	Nurse acknowledgment of alarms via Vault Mobile.
-o	Check that clinical users can interpret alerts easily.
+1.	Clinical Workflow Testing:  
+o	Program infusion on Spectrum pump → verify infusion event appears in DeviceBridge and downstream systems.    
+o	Modify infusion rate → confirm update accuracy in <2 sec.    
+2.	Alarm Validation:  
+o	Simulate occlusion, air-in-line, near-end infusion → verify alarm in Vault Mobile/Nurse Call.  
+o	Check alarm text, priority, and timestamp correctness.  
+3.	Drug Library Validation:  
+o	Program infusion with restricted drug → verify pump blocks it per library rules.  
+o	Confirm validation alerts appear in DeviceBridge logs.  
+4.	Load & Soak Validation:  
+o	100+ concurrent Spectrum pumps over 12–24 hrs.  
+o	Validate no message loss, stable performance under load.  
+5.	Human Factors Validation:  
+o	Nurse acknowledgment of alarms via Vault Mobile.  
+o	Check that clinical users can interpret alerts easily.  
 
-Deliverables: Validation Protocols, Clinical Simulation Results, Validation Report.
+Deliverables: Validation Protocols, Clinical Simulation Results, Validation Report.  
 ________________________________________________________________________________________________________________________________________________
-Test Plan Summary   
+Test Plan Summary     
 
-•	Load Testing: High-volume pump connections.  
-•	Soak Testing: Extended duration with alarms + infusions.  
-•	Functional Testing: Infusion workflows, alarms, drug library sync.  
-•	Usability Testing: Nurse workflows and alarm handling.   
+•	Load Testing: High-volume pump connections.    
+•	Soak Testing: Extended duration with alarms + infusions.    
+•	Functional Testing: Infusion workflows, alarms, drug library sync.    
+•	Usability Testing: Nurse workflows and alarm handling.     
 _________________________________________________________________________________________________________________________________________________
-Validation & Verification Metrics
-Metric	Target Value	Notes
-Infusion update latency	< 2 seconds	Pump → DB → Dashboard
-Alarm propagation accuracy	> 99%	Must match pump alarms exactly
-Data loss rate	< 0.1%	Across all ingestion services
-Drug library sync success rate	100%	All pumps receive latest library
-Uptime during soak test	> 99.9%	No service downtime
+
+Validation & Verification Metrics  
+Metric	Target Value	Notes  
+Infusion update latency	< 2 seconds	Pump → DB → Dashboard  
+Alarm propagation accuracy	> 99%	Must match pump alarms exactly  
+Data loss rate	< 0.1%	Across all ingestion services  
+Drug library sync success rate	100%	All pumps receive latest library  
+Uptime during soak test	> 99.9%	No service downtime  
 
 
