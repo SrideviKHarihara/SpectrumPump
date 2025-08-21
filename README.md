@@ -1,13 +1,14 @@
 # Spectrum IQ infusion pump : Varification and Validation
 ________________________________________
-Overview
+Overview 
 
-This document describes the verification and validation (V&V) framework for Baxter Spectrum Infusion Pumps when integrated with DeviceBridge v4.3.8.
-The goal is to ensure:
-•	Compliance with FDA 21 CFR 820.30 (Design Control), IEC 62304 (software lifecycle), ISO 14971 (risk management), and IEC 60601/62366 (safety & usability).
-•	Reliable, safe, and accurate data ingestion from Spectrum pumps into hospital systems (DeviceBridge, EMR, Nurse Call, Vault Mobile).
-•	End-to-end confirmation that both design requirements (Verification) and user needs (Validation) are satisfied.
+This document describes the verification and validation (V&V) framework for Baxter Spectrum Infusion Pumps when integrated with DeviceBridge v4.3.8.  
+The goal is to ensure:  
+•	Compliance with FDA 21 CFR 820.30 (Design Control), IEC 62304 (software lifecycle), ISO 14971 (risk management), and IEC 60601/62366 (safety & usability).  
+•	Reliable, safe, and accurate data ingestion from Spectrum pumps into hospital systems (DeviceBridge, EMR, Nurse Call, Vault Mobile).  
+•	End-to-end confirmation that both design requirements (Verification) and user needs (Validation) are satisfied.  
 ______________________________________________________________________________________________________________________________________________________________
+
 Verification 
 
 Scope  
