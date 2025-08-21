@@ -64,12 +64,12 @@ o	Check that clinical users can interpret alerts easily.
 
 Deliverables: Validation Protocols, Clinical Simulation Results, Validation Report.
 ________________________________________________________________________________________________________________________________________________
-Test Plan Summary 
+Test Plan Summary   
 
-•	Load Testing: High-volume pump connections.
-•	Soak Testing: Extended duration with alarms + infusions.
-•	Functional Testing: Infusion workflows, alarms, drug library sync.
-•	Usability Testing: Nurse workflows and alarm handling.
+•	Load Testing: High-volume pump connections.  
+•	Soak Testing: Extended duration with alarms + infusions.  
+•	Functional Testing: Infusion workflows, alarms, drug library sync.  
+•	Usability Testing: Nurse workflows and alarm handling.   
 _________________________________________________________________________________________________________________________________________________
 Validation & Verification Metrics
 Metric	Target Value	Notes
