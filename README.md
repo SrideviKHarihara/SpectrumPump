@@ -39,14 +39,15 @@ o	Automated ingestion verification scripts (Python/Splunk queries).
 
 Deliverables: Verification Protocols, Test Scripts, Verification Report.
 __________________________________________________________________________________________________________________________________________
-Validation
+Validation  
 
-Scope
-•	End-to-end infusion workflow from pump → DeviceBridge → hospital systems.
-•	Usability and human factors (nurse workflows, alarm acknowledgment).
-•	Integration with EMR, Vault Mobile, and Nurse Call.
+Scope  
+•	End-to-end infusion workflow from pump → DeviceBridge → hospital systems.  
+•	Usability and human factors (nurse workflows, alarm acknowledgment).  
+•	Integration with EMR, Vault Mobile, and Nurse Call.  
 
 Validation Activities:
+
 1.	Clinical Workflow Testing:  
 o	Program infusion on Spectrum pump → verify infusion event appears in DeviceBridge and downstream systems.    
 o	Modify infusion rate → confirm update accuracy in <2 sec.    
@@ -65,6 +66,7 @@ o	Check that clinical users can interpret alerts easily.
 
 Deliverables: Validation Protocols, Clinical Simulation Results, Validation Report.  
 ________________________________________________________________________________________________________________________________________________
+
 Test Plan Summary     
 
 •	Load Testing: High-volume pump connections.    
