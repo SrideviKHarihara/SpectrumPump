@@ -1,7 +1,5 @@
 # Baxter Spectrum IQ Infusion Pump – Validation & Verification
 
----
-
 ## Overview
 
 This document describes the **Verification & Validation (V&V)** framework for Baxter Spectrum Infusion Pumps integrated with **DeviceBridge v4.3.8**. 
